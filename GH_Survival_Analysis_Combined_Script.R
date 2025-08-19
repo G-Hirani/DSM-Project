@@ -228,7 +228,7 @@ gam.vcomp(bgam_Prop_PF)
 
 ##Post Model Analysis 
 ##Pairwise comparison using emmeans at time points
-#make function for each day so its not averaged
+#make function for each day so its not averaged over time
 emmeans_by_day <- function (model, days = c(0, 5, 10, 15, 20), type = "response"){
   results_list <- list()
   
@@ -285,7 +285,7 @@ write.csv(results_PPF$contrasts, "PPF_contrasts_by_day.csv", row.names = FALSE)
 
 ##Model Plots
 #Plots with Gam models with overlaying data points
-#Custom colours for Treatments
+#Custom colours for Treatments - colour blind friendly
 custom_colours <- c(
   "Control" = plasma(100)[3],
   "SS+DM"     = plasma(100)[28],
