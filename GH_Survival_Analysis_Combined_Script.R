@@ -69,7 +69,7 @@ hist(cdata$Prop_Alive_TC, main = "Distribution of Prop_Alive_TC")
 hist(cdata$Prop_Alive_TF, main = "Distribution of Prop_Alive_TF")
 hist(cdata$Prop_Alive_M, main = "distribution of Prop_Alive_M")
 hist(cdata$Prop_PF, main = "distribution of Prop_PF")
-# Right-Skew for survival data, even distribution Prop_PF
+# Left-Skew for survival data, even distribution Prop_PF
 
 #Colinearity among predictors
 boxplot(Experiment.Day ~ Treatment, data = cdata)
@@ -375,5 +375,6 @@ grid.text("(A)", x = 0.02, y = 0.98, gp = gpar(fontsize = 13, fontfamily = "seri
 grid.text("(B)", x = 0.52, y = 0.98, gp = gpar(fontsize = 13, fontfamily = "serif"))
 grid.text("(C)", x = 0.02, y = 0.525, gp = gpar(fontsize = 13, fontfamily = "serif"))
 grid.text("(D)", x = 0.52, y = 0.525, gp = gpar(fontsize = 13, fontfamily = "serif"))
+
 
 
